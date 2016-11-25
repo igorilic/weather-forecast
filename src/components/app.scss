@@ -2,3 +2,8 @@
 Main scss file
  */
 
+input {
+  &:focus {
+    border-color: aqua;
+  }
+}
