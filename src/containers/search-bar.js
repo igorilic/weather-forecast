@@ -25,7 +25,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit} className="input-group">
+      <form onSubmit={this.onFormSubmit} className="input-group search">
         <input
           placeholder="Get a five day forecast..."
           className="form-control"
@@ -51,4 +51,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(null, mapDispatchToProps)(SearchBar);
-// export default SearchBar;
+

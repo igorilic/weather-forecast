@@ -2,8 +2,29 @@
 Main scss file
  */
 
+.search {
+  margin: 20px 0px;
+}
+
 input {
   &:focus {
     border-color: aqua;
+  }
+
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+td:first-of-type {
+  height: 200px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+    height: auto !important;
   }
 }

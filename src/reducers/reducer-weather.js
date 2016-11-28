@@ -1,9 +1,12 @@
 import * as types from '../actions/actions';
 
-export default function(state = null, action) {
+export default function(state = [], action) {
   switch(action.type) {
     case types.FETCH_WEATHER:
-      return action.payload;
+      return [
+        action.payload.data,
+        ...state
+      ];
     default:
       return state;
   }
